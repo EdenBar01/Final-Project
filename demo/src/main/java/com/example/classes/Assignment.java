@@ -1,14 +1,23 @@
 package com.example.classes;
 
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Assignment {
+public class Assignment implements Serializable {
     private String assignment_id;
     private Date date;
     private Integer number_of_hours;
     private Integer output;
     private Float hourly_avg;
+
+    public Assignment(String assignment_id, Date date, Integer number_of_hours, Integer output, Float hourly_avg) {
+        this.assignment_id = assignment_id;
+        this.date = date;
+        this.number_of_hours = number_of_hours;
+        this.output = output;
+        this.hourly_avg = hourly_avg;
+    }
 
     public String getAssignment_id() {
         return this.assignment_id;

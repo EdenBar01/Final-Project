@@ -4,6 +4,7 @@ import com.example.enums.Gender;
 
 import java.util.Date;
 
+@Deprecated
 public interface Person {
     String person_id = null;
     String first_name = null;
