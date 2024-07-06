@@ -1,13 +1,12 @@
 package com.example.classes.reports;
 
-import com.example.abstracts.Areport;
-import com.example.classes.PersonOnWorkingStation;
-
-import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-public class WorkerReport extends Areport implements Serializable {
+import com.example.abstracts.Areport;
+import com.example.classes.PersonOnWorkingStation;
+
+public class WorkerReport extends Areport{
     private List<PersonOnWorkingStation> personOnWorkingStationList;
 
     public WorkerReport(String report_id, Date date, List<PersonOnWorkingStation> personOnWorkingStationList) {

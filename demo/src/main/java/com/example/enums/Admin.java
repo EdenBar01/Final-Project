@@ -1,7 +1,6 @@
 package com.example.enums;
 
-import java.io.Serializable;
 
-public enum Admin implements Serializable {
+public enum Admin {
     ADMIN,USER;
 }

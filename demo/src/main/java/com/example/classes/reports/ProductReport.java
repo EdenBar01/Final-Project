@@ -1,12 +1,11 @@
 package com.example.classes.reports;
 
-import com.example.abstracts.Areport;
-
-import java.io.Serializable;
 import java.util.Date;
 import java.util.HashMap;
 
-public class ProductReport extends Areport implements Serializable {
+import com.example.abstracts.Areport;
+
+public class ProductReport extends Areport{
     private HashMap<Date, Integer> products;
 
     public ProductReport(String report_id, Date date, HashMap<Date, Integer> products) {

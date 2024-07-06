@@ -1,14 +1,13 @@
 package com.example.classes;
 
 
+import java.util.Date;
+
 import com.example.abstracts.Aperson;
 import com.example.enums.Admin;
 import com.example.enums.Gender;
 
-import java.io.Serializable;
-import java.util.Date;
-
-public class User extends Aperson implements Serializable {
+public class User extends Aperson {
     private String username;
     private String password;
     private Admin admin;
